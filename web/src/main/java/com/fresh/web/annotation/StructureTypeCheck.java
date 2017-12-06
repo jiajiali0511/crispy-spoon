@@ -12,5 +12,6 @@ import static java.lang.annotation.ElementType.METHOD;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({METHOD})
 @Documented
-public @interface ParamCheck {
+public @interface StructureTypeCheck {
+    String value() default "";
 }

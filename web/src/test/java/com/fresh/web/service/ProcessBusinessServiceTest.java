@@ -22,8 +22,11 @@ public class ProcessBusinessServiceTest {
     @Test
     public void testDoWork() throws Exception {
         Student student = new Student();
-        student.setAge(130);
-        student.setName("");
-        processBusinessService.doWork(student);
+        student.setAge(100);
+        student.setName("aa");
+        processBusinessService.doWork(student, "");
+
+//        processBusinessService.doSpeak(null, 55);
+
     }
 }
